@@ -231,6 +231,36 @@ main {
 
     .primeira-seçao {
         grid-column: 1 / 3;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75rem;
+    }
+
+    .primeira-seçao a:first-child {
+        grid-column: 1 / 3;
+    }
+
+    .primeira-seçao a {
+        margin: 0;
+    }
+
+    .primeira-seçao p {
+        margin-bottom: 0;
+    }
+
+    .primeira-seçao a:last-child {
+        grid-column: 2 / 2;
+        display: block;
+        width: 50%;
+    }
+
+    .primeira-seçao h1 {
+        font-size: 3.5rem;
+    }
+
+    .segunda-seçao h2 {
+        font-size: 2.5rem;
     }
 
     header > button {

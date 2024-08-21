@@ -45,6 +45,7 @@ header button {
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 header .nav-mobile {
@@ -223,6 +224,26 @@ main {
 /*---------------------------------*/
 
 @media(min-width: 1110px) {
+    header > button {
+        display: none;
+    }
+
+    header .nav-desktop {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    header .nav-desktop a {
+        font-size: 0.9375rem;
+        line-height: 1.625rem;
+        text-decoration: none;
+        color: var(--gunmetal);
+    }
+
+    header .nav-desktop a:hover {
+        color: var(--vermillion);
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -245,6 +266,10 @@ main {
         margin: 0;
     }
 
+    .primeira-seçao a:last-child:hover {
+        background-color: var(--dark-blue);
+    }
+
     .primeira-seçao p {
         margin-bottom: 0;
     }
@@ -263,20 +288,17 @@ main {
         font-size: 2.5rem;
     }
 
-    header > button {
-        display: none;
+    .segunda-seçao h3:hover {
+        color: var(--vermillion);
     }
 
-    header .nav-desktop {
+    .terceira-seçao {
         display: flex;
-        gap: 2.5rem;
+        grid-column: 1/ 4;
     }
 
-    header .nav-desktop a {
-        font-size: 0.9375rem;
-        line-height: 1.625rem;
-        text-decoration: none;
-        color: var(--gunmetal);
+    .terceira-seçao h2:hover {
+        color: var(--vermillion);
     }
 }
 

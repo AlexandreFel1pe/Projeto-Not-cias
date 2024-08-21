@@ -14,14 +14,14 @@
     <title>W. Notícias</title>
 </head>
 <body>
-    <header class="header-mobile">
+    <header>
         <img src="./assets/images/logo.svg" alt="Logo do site de notícias W.">
         
         <button>
             <img src="./assets/images/icon-menu.svg" alt="Ícone do menu hamburguer">
         </button>
 
-        <nav>
+        <nav class="nav-mobile">
             <button>
                 <img src="./assets/images/icon-menu-close.svg" alt="Ícone de X para fechar o menu">
             </button>
@@ -32,11 +32,25 @@
             <a href="#">Trendig</a>
             <a href="#">Categorias</a>
         </nav>
+
+        <nav class="nav-desktop">
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trendig</a>
+            <a href="#">Categorias</a>
+        </nav>
     </header>
 
     <main>
         <section class="primeira-seçao">
-            <a href="/noticias_base/noticia.html"><img src="./assets/images/image-web-3-mobile.jpg" alt="Ícone de puzzle colorido"></a>
+            <a href="/noticias_base/noticia.html">
+                <picture>
+                    <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                    <img src="./assets/images/image-web-3-mobile.jpg" alt="Ícone de puzzle colorido">
+                </picture>
+            </a>
+
             <a href="/noticias_base/noticia.html"><h1>O futuro brilhante da Web 3.0?</h1></a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aspernatur repudiandae, ullam porro esse sapiente expedita, molestiae sed dignissimos deleniti vitae earum laboriosam soluta? Nulla quos quo tenetur necessitatibus consectetur?</p>
             <a href="/noticias_base/noticia.html" class="button-section-1">Ler Mais</a>

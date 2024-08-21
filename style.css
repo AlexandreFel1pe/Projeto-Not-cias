@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialised;
+    text-decoration: none;
 }
 
 :root {
@@ -99,7 +100,7 @@ body.escurecer::before {
     margin-bottom: 1.5rem;
 }
 
-.primeira-seçao button {
+.primeira-seçao .button-section-1 {
     padding: 0.75rem 2rem;
     background-color: var(--vermillion);
     border: none;
@@ -109,6 +110,7 @@ body.escurecer::before {
     font-size: 0.875rem;
     letter-spacing: 0.275rem;
     line-height: 1.5rem;
+    border-radius: 3px;
 }
 
 .segunda-seçao {
@@ -174,3 +176,25 @@ body.escurecer::before {
     font-size: 0.9375rem;
     line-height: 1.625rem;
 }
+
+/* PÁGINA DA NOTÍCIA CRIADA POR MIM*/
+
+.noticia h1 {
+    font-size: 2.5rem;
+    line-height: 100%;
+    margin-bottom: 1.5rem;
+    color: var(--dark-blue);
+}
+
+.noticia img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.noticia p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: var(--gunmetal);
+}
+
+/*---------------------------------*/
